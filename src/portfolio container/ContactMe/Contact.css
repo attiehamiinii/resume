@@ -1,0 +1,107 @@
+.contact {
+    width: 100%;
+    background: #23263a;
+    padding: 100px 0;
+  }
+  .comman {
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    font-family: "Poppins SemiBold";
+  }
+  .main-header{
+      padding-bottom: 20px;
+  }
+  .plans{
+   display: flex;
+    transition: all 0.5s linear;
+  }
+  .plan:hover{
+    background: #ff4a57;
+  }
+  .plan{
+  width: 30%;
+    padding: 8px ;
+    margin: 5px 20px;
+    display: inline-block;
+ vertical-align: middle;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 5px rgba(27, 27, 27, 0.5);
+  }
+.plan__title{
+    font-size: 15px;
+ 
+}
+.plan__info{
+    font-size: 12px;
+}
+.logo__img-email{
+ width: 20%;
+}
+.logo__img-call{
+  width: 15%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.logo__img-location{
+  width: 20%;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+.container__email{
+  display: flex;
+}
+.holders{
+  width: 100%;
+  padding: 8px ;
+ margin-top: 25px;
+  display: inline-block;
+vertical-align: middle;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 25px 5px rgba(27, 27, 27, 0.5);
+
+}
+
+.holder{
+  background: #23263a;
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  width: 77%;
+  font-weight: bold;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+}
+.msg-holder{
+
+  background: #23263a;
+ display: block;
+margin-top: 15px;
+padding: 20px;
+width: 77%;
+ font-weight: bold;
+margin-left: auto;
+margin-right: auto;
+box-sizing: border-box;
+border-radius: 20px;
+box-shadow: inset 0 0 10px #020202;
+ 
+}
+.primary-btn2 {
+  color:white;
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
+  margin: 20px;
+}
+.primary-btn2:hover {
+  color: aliceblue;
+  border: 2px solid #ff4a57;
+  background-color: #1f2235;
+}

@@ -1,13 +1,17 @@
-/*eslint-disable*/
-import React from "react";
-import {
-  BrowserRouter as Router,Link} from "react-router-dom"
 
+import React from "react";
+import {Link} from 'react-scroll'
 import Logo from "../../../assets/Home/logo.png";
 import "./Navbar.css";
-export default function Navbar() {
+ const Navbar = () => {
+
+
+
+
+ 
+
   return (
-   <Router>
+  
     <nav className="navbar">
       <div className="container">
         <div className="navbar__container">
@@ -16,25 +20,28 @@ export default function Navbar() {
               <img src={Logo} alt="logo" />
             </div>
           </ul>
-        
+         
           <ul className="navbar__right">
             <li>
-              <Link to="/">Home</Link>
+            <Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link>
+            </li>
+            
+            <li >
+          
+            <Link  to="about" spy={true} smooth={true}>About</Link>
             </li>
             <li>
-              <Link to="/About">About Me</Link>
+            <Link  to="skill" spy={true} smooth={true}>Skill</Link>
             </li>
             <li>
-              <Link to="/Skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/ContactMe">Contact Me</Link>
+            <Link  to="contact" spy={true} smooth={true}>Contact</Link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   
-  </Router>
+ 
   );
-}
+  }
+export default Navbar

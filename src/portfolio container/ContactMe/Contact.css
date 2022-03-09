@@ -77,9 +77,10 @@ vertical-align: middle;
 margin-left: auto;
 margin-right: auto;
 border-radius: 10px;
+color: aliceblue;
 }
 .msg-holder{
-
+  color: aliceblue;
   background: #23263a;
  display: block;
 margin-top: 15px;

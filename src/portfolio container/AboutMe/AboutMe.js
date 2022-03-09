@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "./AboutMe.css";
 import Avatar from "../../assets/Home/avatar.png";
 export default function AboutMe() {
+
   const [state] = useState([
     { id: 1, title: "Name:", text: "Atieh Amini" },
     { id: 2, title: "Email:", text: "attieh.amiinii@gmail.com" },
@@ -16,11 +17,12 @@ export default function AboutMe() {
     subHeader: "About Me",
     text: "Junior Front End Developer",
   });
+
   return (
     <div className="about">
       <div className="container">
         <div className="common">
-          <h1 className="mainHeader">{header.subHeader}</h1>
+          <h1 className="mainHeader"  >{header.subHeader}</h1>
           <p className="mainContent">{header.text}</p>
           <div className="commonBorder"></div>
         </div>

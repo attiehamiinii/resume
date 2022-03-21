@@ -18,7 +18,8 @@
     transition: all 0.5s linear;
   }
   .plan:hover{
-    background: #ff4a57;
+    background: #ca555d;
+ transform: scale(1.1,1.1);
   }
   .plan{
   width: 30%;

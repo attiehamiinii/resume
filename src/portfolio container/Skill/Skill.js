@@ -1,65 +1,155 @@
-import React from "react";
-import "./Skill.css";
+import React from 'react';
+import { Button, Text, Box, Flex } from '@chakra-ui/react';
+import { Grid, GridItem, Heading } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
+
 export default function Skill() {
   return (
-    <div className="skill__me">
-      <div className="cotainer">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="section-title">
-              <span>i'm expert on</span>
-              <h2 className="h2">
-                Let's Work Together<span></span>
-              </h2>
-              <button className="btn primary-btn1">
-                {""}
-                Hire Me{" "}
-              </button>
-            </div>
-          </div>
-
-          <div className="col-md-6">
-            <div className="row">
-              <h3 className="progress-title">HTML5 - CSS - JavaScript</h3>
-              <div className="progress orange">
-                <div
-                  className="progress-bar"
-                  style={{ width: "90%", backgroundColor: "#fe3b3b" }}
-                >
-                  <div className="progress-value">90%</div>
-                </div>
-              </div>
-              <h3 className="progress-title">React - Redux</h3>
-              <div className="progress blue">
-                <div
-                  className="progress-bar"
-                  style={{ width: "70%", backgroundColor: "#1a4966" }}
-                >
-                  <div className="progress-value">70%</div>
-                </div>
-              </div>
-              <h3 className="progress-title">Bootstrap - TypeScript</h3>
-              <div className="progress green">
-                <div
-                  className="progress-bar"
-                  style={{ width: "50%", backgroundColor: "#41b1b4" }}
-                >
-                  <div className="progress-value">50%</div>
-                </div>
-              </div>
-              <h3 className="progress-title">Photoshop - Illustrator</h3>
-              <div className="progress purple">
-                <div
-                  className="progress-bar"
-                  style={{ width: "85%", backgroundColor: "#7f5888" }}
-                >
-                  <div className="progress-value">85%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Box p="70px">
+      <Grid templateColumns="repeat(5, 1fr)" gap={4} pt="30" pb="50">
+        <GridItem colSpan={2}>
+          <Box align="center" justify="center">
+            <span style={{ color: '#ff4a57', fontSize: '1.5em' }}>i'm expert on</span>
+            <Heading mt="12" as="h3" size="lg" fontWeight="bold" fontFamily="revert">
+              Let's Work Together
+            </Heading>
+            <Button
+              _hover={{
+                background: '#32354b',
+                color: '#ff4a57',
+                borderColor: '#ff4a57',
+              }}
+              boxShadow="md"
+              background="#ff4a57"
+              color="#ffffff"
+              colorScheme="#32354b"
+              size="md"
+              height="48px"
+              width="150px"
+              mt="12"
+              fontSize="20px"
+              fontWeight="semibold"
+              borderColor="#ff4a57"
+              borderRadius="30"
+              font-family="Signika Negative"
+            >
+              Get Resume
+            </Button>
+          </Box>
+        </GridItem>
+        <GridItem colSpan={3}>
+          <Flex display="inline-block" pl="150px">
+            <Text
+              mb="0"
+              fontSize="1.2em"
+              fontStyle="italic"
+              fontWeight="semibold"
+              fontFamily="Signika Negative"
+              position="absolute"
+            >
+              HTML/CSS/JavaScript
+            </Text>
+            <motion.div whileHover={{ opacity: 0.5, y: '+20%' }}>
+              <CircularProgress
+                value={90}
+                color="#1f2235"
+                size="120px"
+                thickness="8px"
+                capIsRound="true"
+                position="relative"
+              >
+                <CircularProgressLabel textAlign="center" color="#1f2235">
+                  90%
+                </CircularProgressLabel>
+              </CircularProgress>
+            </motion.div>
+          </Flex>
+          <Flex display="inline-block" pl="125px">
+            <Text
+              mb="0"
+              fontSize="1.2em"
+              fontStyle="italic"
+              fontWeight="semibold"
+              fontFamily="Signika Negative"
+              position="absolute"
+              color="#ff4a57"
+              mt="165"
+            >
+              React/Redux
+            </Text>
+            <motion.div whileHover={{ opacity: 0.5, y: '-20%' }}>
+              <CircularProgress
+                value={70}
+                color="#ff4a57"
+                size="120px"
+                thickness="8px"
+                capIsRound="true"
+                position="relative"
+              >
+                <CircularProgressLabel textAlign="center" color="#ff4a57">
+                  70%
+                </CircularProgressLabel>
+              </CircularProgress>
+            </motion.div>
+          </Flex>
+          <Flex display="inline-block" pl="125px">
+            <Text
+              mb="0"
+              fontSize="1.2em"
+              fontStyle="italic"
+              fontWeight="semibold"
+              fontFamily="Signika Negative"
+              position="absolute"
+              color="#1f2235"
+            >
+              Typescript/Nodjs
+            </Text>
+            <motion.div whileHover={{ opacity: 0.5, y: '+20%' }}>
+              <CircularProgress
+                value={50}
+                color="#1f2235"
+                size="120px"
+                thickness="8px"
+                capIsRound="true"
+                position="relative"
+              >
+                <CircularProgressLabel textAlign="center" color="#1f2235">
+                  50%
+                </CircularProgressLabel>
+              </CircularProgress>
+            </motion.div>
+          </Flex>
+          <Flex display="inline-block" pl="125px">
+            <Text
+              mb="0"
+              fontSize="1.2em"
+              fontStyle="italic"
+              fontWeight="semibold"
+              fontFamily="Signika Negative"
+              position="absolute"
+              color="#ff4a57"
+              mt="165"
+            >
+              Adobe suite
+            </Text>
+            <motion.div whileHover={{ opacity: 0.5, y: '-20%' }}>
+              <CircularProgress
+                value={65}
+                color="#ff4a57"
+                size="120px"
+                thickness="8px"
+                capIsRound="true"
+                position="relative"
+              >
+                <CircularProgressLabel textAlign="center" color="#ff4a57">
+                  65%
+                </CircularProgressLabel>
+              </CircularProgress>
+            </motion.div>
+          </Flex>
+        </GridItem>
+      </Grid>
+    </Box>
   );
 }

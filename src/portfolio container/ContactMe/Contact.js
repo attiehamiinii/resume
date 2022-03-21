@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState,useRef} from  'react'
 import './Contact.css';
+
+import { Button} from '@chakra-ui/react';
 import email from '../../assets/Home/email.png';
 import phone from '../../assets/Home/phone.png'
 import location from '../../assets/Home/location.png'
@@ -57,6 +59,8 @@ const Contact = () => {
               <div className='container__email'>
                   <div className='holders'>
                   <form className='form_email' ref={formref} onSubmit={handelSubmit}>
+              
+
             <input
              className='holder'
               type="text"
@@ -81,10 +85,28 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             />
-            <button className="btn primary-btn2">
-                {""}
-               Submit {" "}
-              </button>
+           <Button
+              _hover={{
+                background: '#32354b',
+                color: '#ff4a57',
+                borderColor: '#ff4a57',
+              }}
+              boxShadow="md"
+              background="#ff4a57"
+              color="#ffffff"
+              colorScheme="#32354b"
+              size="md"
+              height="48px"
+              width="150px"
+              mt="12"
+              fontSize="20px"
+              fontWeight="semibold"
+              borderColor="#ff4a57"
+              borderRadius="30"
+              font-family="Signika Negative"
+            >
+              Submit
+            </Button>
             {done && "Thank you..."}
           </form>
                   </div>

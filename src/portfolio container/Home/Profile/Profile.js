@@ -19,7 +19,7 @@ export default function Profile() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <i class="fa brands fa-linkedin"></i>
+                <i className="fa brands fa-linkedin"></i>
               </a>
               <a href="https://github.com/attiehamiinii" rel="noreferrer" target="_blank">
                 <i className="fa fa-github"></i>
@@ -55,7 +55,7 @@ export default function Profile() {
               </span>
             </span>
           </div>
-          <Stack spacing={40} direction="row" justify="center">
+          <Stack spacing={20} direction="row" justify="center">
             <motion.div
               whileHover={{ scale: [1, 0.7, 1] }}
               whileTap={{
@@ -73,14 +73,14 @@ export default function Profile() {
                   background="#32354b"
                   color="#ffffff"
                   colorScheme="#32354b"
-                  height="48px"
-                  width="150px"
+                  height="45px"
+                  width="125px"
                   m="0"
-                  fontSize="20px"
+                  fontSize="18px"
                   fontWeight="semibold"
                   borderColor="#ffffff"
                   borderRadius="30"
-                  font-family= 'Signika Negative'
+                  fontFamily= 'Signika Negative'
                 >
                   Hire Me
                 </Button>
@@ -104,14 +104,14 @@ export default function Profile() {
                   color="#ffffff"
                   colorScheme="#32354b"
                   size="md"
-                  height="48px"
-                  width="150px"
+                  height="45px"
+                  width="135px"
                   m="0"
-                  fontSize="20px"
+                  fontSize="18px"
                   fontWeight="semibold"
                  borderColor='#ff4a57'
                   borderRadius="30"
-                  font-family= 'Signika Negative'
+                  fontFamily= 'Signika Negative'
                 >
                   Get Resume
                 </Button>

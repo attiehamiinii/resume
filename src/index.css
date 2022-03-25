@@ -53,6 +53,7 @@
 
 body {
   margin: 0;
+  
   overflow-y: overlay;
   font-family: "Poppins Regular";
   -webkit-font-smoothing: antialiased;

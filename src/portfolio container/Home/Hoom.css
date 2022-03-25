@@ -3,4 +3,14 @@
   flex-direction: column;
   justify-content: space-between;
   background-image: url('../../assets/Home/bg.jpg');
+ 
+  
+}
+@media (min-width: 320px) and (max-width: 896px)  {
+
+  .home-container{
+    background-color: #24263b;
+    background-image:none
+  
+  }
 }

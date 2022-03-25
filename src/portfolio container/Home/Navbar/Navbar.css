@@ -1,42 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 .navbar {
   width: 100%;
-  height: 85px;
   position: fixed;
   overflow: hidden;
+  height: 85px;
+  position: relative;
   top: 0;
-  background: #32354b;
+  background: #1f2235;
   z-index: 1;
 }
-.container {
-  width: 1200px;
-  margin: auto;
+.container_nav {
+  width: auto;
+  margin: 0px auto;
+  float: none;
+  padding: auto;
 }
 .navbar__container {
   display: flex;
-  height: 85px;
+  height: auto;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 }
+
 .navbar__left-logo img {
-  width: 150px;
+  width: 120px;
+
 }
 
 .navbar__right {
   display: flex;
   list-style-type: none;
-
+  margin: auto;
 }
 .navbar__right li {
   text-decoration: none;
   font-family: 'Karla', sans-serif;
   color: #ffffff;
-  font-size:25px;
-  padding: 0 35px;
+  font-size: 20px;
   cursor: pointer;
- 
+  margin-left: auto;
+  margin-right: auto;
+
 }
-.navbar__right li:hover{
+.navbar__right li:hover {
   color: #ff4a57;
   transform: scale(1.2);
+}
+.toggle {
+  position: fixed;
+  top: 50px;
+  right: 25px;
+  background: #ff4a57;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 1;
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .navbar__right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #1f2235;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .navbar__right li {
+    display: block;
+    padding: 0px auto;
+    font-size: 15px;
+    align-items: center;
+  }
+  .navbar {
+    float: left;
+    padding: 10px 0px;
+    height: 10px;
+    line-height: 30px;
+    margin: 0 0px;
+    background: none;
+  }
+  .toggle {
+    display: flex;
+    z-index: 1;
+  }
+  .navbar__left-logo img {
+    display: none;
+  }
+}
+@media (min-width: 568px) and (max-width: 896px) {
+  .navbar__right {
+    width: 100%;
+    align-items: center;
+  }
+  .navbar__right li {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 22px;
+    position: relative;
+  }
+  .navbar {
+    width: 100%;
+    float: left;
+    position: fixed;
+    overflow: hidden;
+    height: 60px;
+    top: 0;
+    background: #1f2235;
+    z-index: 1;
+  }
+  .navbar__left-logo img {
+    width: 80px;
+  }
+  .navbar__left-logo {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+}
+@media (min-width:896px) and (max-width: 1920px) {
+  .navbar {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    background: #1f2235;
+    z-index: 1;
+  }
+  .navbar__left{
+   left: 100px;
+    position: absolute;
+    top: 5px;
+
+  }
+  .navbar__left-logo img {
+  width: 150px;
+   
+  }
+
+  .navbar__right li {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    padding-left: 45px;
+    cursor: pointer;
+  }
 }

@@ -1,14 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-scroll';
+import { FaAlignJustify } from "react-icons/fa";
 import Logo from '../../../assets/Home/logo.png';
 import { motion } from 'framer-motion';
 import './Navbar.css';
 const Navbar = () => {
+  const [state, setState] = useState(true);
   return (
     <nav className="navbar">
-      <div className="container">
+      <div className="container_nav">
         <div className="navbar__container">
-          <ul className="navbart__left">
+          <ul className="navbar__left">
             <div className="navbar__left-logo">
               <motion.div
                 initial={{ scale: 0 }}
@@ -23,10 +25,10 @@ const Navbar = () => {
               </motion.div>
             </div>
           </ul>
-
+          {state ? (
           <ul className="navbar__right">
             <li>
-              <Link activeClass="active" to="home" spy={true} smooth={true}>
+              <Link  to="home" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
@@ -42,12 +44,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="contact" spy={true} smooth={true}>
+              <Link  to="contact" spy={true} smooth={true}>
                 Contact
               </Link>
             </li>
           </ul>
+           ) : (
+            ""
+          )}
         </div>
+      </div>
+      <div className="toggle" onClick={() => setState(!state)}>
+        <FaAlignJustify />
       </div>
     </nav>
   );

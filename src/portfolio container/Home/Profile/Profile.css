@@ -114,8 +114,14 @@
   .profile-picture {
     height: 320px;
     width: 320px;
-    margin: 0 0 0 4px;
+    margin: 0 0 0 8px;
   }
+  .profile-details-role h1 {
+    font-size: 35px;
+    }
+    .profile-role-tagline{
+      font-size: 18px;
+    }
 }
 @media screen and (max-width: 810px) {
   .profile-picture {
@@ -138,6 +144,13 @@
   .profile-options .profile-details-role {
     text-align: center;
   }
+  .profile-role-tagline{
+    font-size: 15px;
+  }
+  .profile-details-role h1 {
+    font-size: 25px;
+    
+    }
 }
 @media screen and (max-width: 375px) {
   .profile-picture {
@@ -148,4 +161,8 @@
   .profile-details {
     width: 90%;
   }
+  .profile-details-role h1 {
+font-size: 20px;
+
+}
 }

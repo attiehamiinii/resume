@@ -68,13 +68,13 @@ code {
 ::-webkit-scrollbar {
   width: 6px !important;
   height: 6px !important;
-} */
+} 
 
-/* body ::-webkit-scrollbar-thumb {
+body ::-webkit-scrollbar-thumb {
   background-color: hsla(0, 0%, 100%, 0.16);
-} */
+} 
 
-/* ::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
 }
 

@@ -65,7 +65,7 @@ code {
     monospace;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px !important;
   height: 6px !important;
 } */
@@ -80,7 +80,7 @@ code {
 
 ::-webkit-scrollbar-track {
   background: hsla(0, 0%, 100%, 0.1);
-} */
+}
 
 
 

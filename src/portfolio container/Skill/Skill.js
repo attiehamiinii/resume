@@ -7,7 +7,7 @@ import { BsDownload } from 'react-icons/bs';
 
 export default function Skill() {
   return (
-    <Box p={[50]}>
+    <Box p={[90]}>
       <Box align="center" justify="center" w={[300, 400, 500, 970, 1024, 1940]}>
         <span style={{ color: '#ff4a57', fontSize: '1.5em' }}>i'm expert on</span>
         <Heading mt={[12]} as="h3" size="lg" fontWeight="bold" fontFamily="revert">
